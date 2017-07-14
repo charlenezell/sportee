@@ -1,0 +1,7 @@
+<template name="nav">
+    <view class="nav nav--{{data4nav.navItems.length}}">
+        <block wx:for="{{data4nav.navItems}}" wx:key="{{index}}">
+            <view class="nav__item" bindtab="nav_handlerClick">{{item.name}}</view>
+        </block>
+    </view>
+</template>

@@ -1,0 +1,4 @@
+<import is="" src="../../component/nav/index.wxml" />
+
+ <template is="nav" data="{{...data4nav}}"/>
+<!-- <view>{{hello}}</view> -->

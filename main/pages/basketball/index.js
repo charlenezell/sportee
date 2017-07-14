@@ -1,14 +1,13 @@
 Page({
   data: {
-    // animationData: {}
+    actions:["Grouping","MatchTime"]
   },
   onShow: function(){
     var animation = wx.createAnimation({
       duration: 1000,
         timingFunction: 'ease',
-    })
-
-    this.animation = animation
+    });
+    this.animation = animation;
     this.rotateAndScaleThenTranslate();
   },
   rotateAndScaleThenTranslate: function () {
