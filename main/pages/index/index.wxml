@@ -1,0 +1,11 @@
+<!--index.wxml-->
+<view class="container">
+  <view class="gameList weui-grids">
+    <block wx:for="{{gameList}}" wx:key="{{index}}">
+      <navigator url="{{item.nav}}" class="gameItem weui-grid" hover-class="weui-grid_active">
+          <image class="weui-grid__icon" src="{{item.icon}}" />
+          <view class="weui-grid__label">{{item.name}}</view>
+      </navigator>
+    </block>
+  </view>
+</view>

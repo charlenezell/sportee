@@ -1,0 +1,27 @@
+{
+  "name": "sportee",
+  "version": "1.0.0",
+  "description": "sportee is a \"xiaochengxu\" for solving some circumstances of playing sport with your friends",
+  "main": "test.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/charlenezell/sportee.git"
+  },
+  "keywords": [
+    "wx",
+    "sport",
+    "tool"
+  ],
+  "author": "charlenezell",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/charlenezell/sportee/issues"
+  },
+  "homepage": "https://github.com/charlenezell/sportee#readme",
+  "dependencies": {
+    "weui-wxss": "^1.1.1"
+  }
+}
