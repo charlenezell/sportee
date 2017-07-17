@@ -1,7 +1,8 @@
 <view class="actions">
     <block wx:for="{{actions}}" wx:key="{{index}}">
-        <view class="actionsItem" animation="{{animationData[index]}}">
-          {{item}}
-        </view>
+        <navigator url="{{item.nav}}" class="actionsItem" animation="{{animationData[index]}}">
+            {{item.name}}
+        </navigator>
     </block>
+    <view class="actionsItem actionsItem--back" bindtap="backUrl">back</view>
 </view>

@@ -13,7 +13,7 @@ Page({
         r.push({
           name:"期待你的建议",
           icon:"./resource/empty.png",
-          nav:"/page/contactme/index"
+          nav:"/pages/feedback/index"
         });
       }
       return r;
@@ -22,9 +22,9 @@ Page({
     }
   },
   onLoad: function () {
-      wx.navigateTo({
-        url: "/pages/basketball/index"
-      })
+      // wx.navigateTo({
+      //   url: "/pages/basketball/index"
+      // })
       // wx.navigateTo({
       //   url:"/pages/test/index"
       // })

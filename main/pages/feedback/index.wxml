@@ -1,0 +1,34 @@
+<view class="page weui-flex" xmlns:wx="http://www.w3.org/1999/xhtml">
+    <view class="weui-panel weui-panel--panel1 weui-flex__item">
+        <form bindsubmit="formSubmit" bindreset="formReset">
+            <view class="weui-panel__hd">
+                亲爱的{{userInfo.nickName||'用户'}},何不花半分钟留下您看法？
+            </view>
+            <view class="weui-panel__bd">
+                <view class="weui-media-box weui-media-box_text">
+                    <view class="weui-media-box__title">* 选择反馈类型:</view>
+                    <view class="weui-media-box__desc">
+                        <picker bindchange="bindPickerChange" value="{{typeIndex}}" range="{{type}}">
+                            <view>{{type[typeIndex]}}</view>
+                        </picker>
+                    </view>
+                </view>
+                <view class="weui-media-box weui-media-box_text">
+                    <view class="weui-media-box__title">* 我的看法:</view>
+                    <view class="weui-media-box__desc">
+                        <textarea class="weui-textarea" placeholder="不积跬步无以至千里~期待你的建议~" auto-focus maxlength="{{maxLength}}" style="height: 3.3em"
+                            bindinput="inputTextarea" />
+                        <view class="weui-textarea-counter">{{words.length}}/{{maxLength}}</view>
+                    </view>
+                </view>
+            </view>
+            <view class="weui-panel__ft">
+                <view class="weui-media-box weui-media-box_text">
+                    <view class="weui-media-box__bd"><button class="weui-btn" formType="submit" type="primary">提交</button></view>
+                    <button class="weui-btn" type="default" bindtap="backtolastpage">返回</button>
+                </view>
+            </view>
+        </form>
+    </view>
+    <!-- <button formType="reset">重填</button> -->
+</view>

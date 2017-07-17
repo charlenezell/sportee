@@ -1,0 +1,34 @@
+<view class="page weui-flex" xmlns:wx="http://www.w3.org/1999/xhtml">
+    <view class="weui-panel weui-panel--panel1 weui-flex__item">
+        <form bindsubmit="formSubmit" bindreset="formReset">
+            <view class="weui-panel__hd">
+                你需要如何分组？
+            </view>
+            <view class="weui-panel__bd">
+                <view class="weui-media-box weui-media-box_text">
+                    <view class="weui-media-box__title">* 你有多少人？</view>
+                    <view class="weui-media-box__desc">
+                        <slider bindchange="totalPeopleChange" show-value max="50" value="{{totalPeople}}"/>
+                    </view>
+                </view>
+                <view class="weui-media-box weui-media-box_text">
+                    <view class="weui-media-box__title">* 要分多少组？</view>
+                    <view class="weui-media-box__desc">
+                        <picker bindchange="bindPickerChange" value="{{groupIndex}}" range="{{groupTo}}">
+                            <view>我要分{{groupIndex}}组</view>
+                            <view>每组{{calPerGroup||0}}人</view>
+                            <block wx:for="{{previewData}}" wx:for-index="gidx">
+                                <view class="group">
+                                    <block wx:for="{{item}}">
+                                        <view class="groupItem">{{item}}</view>
+                                    </block>
+                                </view>
+                            </block>
+                        </picker>
+                    </view>
+                </view>
+            </view>
+        </form>
+    </view>
+    <!-- <button formType="reset">重填</button> -->
+</view>

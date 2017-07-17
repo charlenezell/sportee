@@ -1,15 +1,17 @@
 {
-  "pages":[
+  "pages": [
     "pages/index/index",
     "pages/basketball/index",
+    "pages/feedback/index",
     "pages/test/index",
+    "pages/basketball/action/grouping/index",
+    "pages/basketball/action/matchtime/index",
     "pages/tabletennis/index"
   ],
-  "window":{
-    "backgroundTextStyle":"light",
+  "window": {
+    "backgroundTextStyle": "light",
     "navigationBarBackgroundColor": "#fff",
     "navigationBarTitleText": "WeChat",
-    "navigationBarTextStyle":"black"
-  },
-  "debug":true
+    "navigationBarTextStyle": "black"
+  }
 }

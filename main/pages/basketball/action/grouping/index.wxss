@@ -1,0 +1,18 @@
+.group{
+    background:blue;
+    display:flex;
+    flex-wrap: wrap;
+    margin-bottom: 10rpx;
+}
+.groupItem{
+    font-size: 16px;
+    font-family: "Arial";
+    background-color: yellow;
+    border-radius:300px;
+    width:120rpx;
+    margin-right: 20rpx;
+    margin-bottom: 20rpx;
+    height:120rpx;
+    line-height: 120rpx;
+    text-align: center;
+}
