@@ -1,0 +1,16 @@
+<view class="page" xmlns:wx="http://www.w3.org/1999/xhtml">
+    <view class="topbar">{{topbar__title}}</view>
+    <view class="main">
+        <view class="main__cat">
+            <block wx:for="{{catList}}">
+                <view data-id="{{item.id}}" class="catItem" bindtap="catClick">{{item.name}}</view>
+            </block>
+        </view>
+        <view class="main__cont">
+            <block wx:for="{{itemList}}">
+                <view data-id="{{item.id}}" class="prodItem" bindtap="prodClick">{{item.name}}</view>
+            </block>
+        </view>
+    </view>
+    <view class="statusbar">{{prodInCart.length}}</view>
+</view>

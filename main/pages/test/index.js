@@ -6,7 +6,6 @@ Page({
     }
   },
   onLoad:function (){
-    // alert("h")
     new Nav(this,{
       navItems:[{
         name:'1'

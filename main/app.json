@@ -1,5 +1,6 @@
 {
   "pages": [
+    "pages/testMT/index",
     "pages/index/index",
     "pages/basketball/index",
     "pages/feedback/index",
