@@ -1,8 +1,8 @@
 {
   "pages":[
-    "pages/test/index",
     "pages/index/index",
     "pages/basketball/index",
+    "pages/test/index",
     "pages/tabletennis/index"
   ],
   "window":{
@@ -10,5 +10,6 @@
     "navigationBarBackgroundColor": "#fff",
     "navigationBarTitleText": "WeChat",
     "navigationBarTextStyle":"black"
-  }
+  },
+  "debug":true
 }

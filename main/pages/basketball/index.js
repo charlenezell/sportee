@@ -1,21 +1,34 @@
+const actions = ["Grouping", "MatchTime", "others"];
+let p = 0;
+
+function getPos() {
+  let s = actions.length;
+  let startDeg = 90;
+  let deg = ( Math.PI/180) * ((360 / s * p) + startDeg);
+  console.log(((360 / s * p) + startDeg))
+  let c = [Math.cos(deg) *50,
+    Math.sin(deg) *50
+  ];
+  p++;
+  return c;
+}
 Page({
   data: {
-    actions:["Grouping","MatchTime"]
+    actions: actions
   },
-  onShow: function(){
-    var animation = wx.createAnimation({
-      duration: 1000,
+  onLoad: function () {
+    actions.forEach((v,k) => {
+      var animation = wx.createAnimation({
+        duration: 500,
         timingFunction: 'ease',
-    });
-    this.animation = animation;
-    this.rotateAndScaleThenTranslate();
-  },
-  rotateAndScaleThenTranslate: function () {
-    // 先旋转同时放大，然后平移
-    this.animation.rotate(90).scale(2, 8).step()
-    this.animation.translate(400, 100).step({ duration: 1000 })
-    this.setData({
-      animationData: this.animation.export()
+      });
+      let [x, y] = getPos.call(this);
+      animation.translate(x, -y).rotate(360).step();
+      setTimeout(()=>{
+        this.setData({
+          ["animationData." + k]: animation.export()
+        });
+      })
     })
   }
 })

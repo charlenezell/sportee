@@ -4,8 +4,8 @@ let method={
     }
 };
 function Nav(page,data={},method={}){
-    // console.log("hehe")
-    page.setData({data4nav:data});
-    Object.assign(page,method,extMethod)
+    page.setData({"zComponent.data4nav":data});
+    let extMethod={};
+    Object.assign(page,method,extMethod);
 }
 export default Nav;

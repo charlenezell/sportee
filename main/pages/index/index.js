@@ -22,12 +22,12 @@ Page({
     }
   },
   onLoad: function () {
-      // wx.navigateTo({
-      //   url: app.globalData.gameTypeRegistry[0].nav
-      // })
       wx.navigateTo({
-        url:"/pages/test/index"
+        url: "/pages/basketball/index"
       })
+      // wx.navigateTo({
+      //   url:"/pages/test/index"
+      // })
     // app.getUserInfo((userInfo)=>{
       //更新数据
       this.setData({

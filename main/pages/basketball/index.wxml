@@ -1,0 +1,7 @@
+<view class="actions">
+    <block wx:for="{{actions}}" wx:key="{{index}}">
+        <view class="actionsItem" animation="{{animationData[index]}}">
+          {{item}}
+        </view>
+    </block>
+</view>

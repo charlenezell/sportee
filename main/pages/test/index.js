@@ -1,18 +1,20 @@
-// import Nav from "../../component/nav/index";
+import Nav from "../../component/nav/index";
 Page({
   data:{
-    // data4nav:{},
-    // hello:123
+    zComponent:{
+      data4nav:{}
+    }
   },
   onLoad:function (){
-    // new Nav(this,{
-    //   navItems:[{
-    //     name:'1'
-    //   },{
-    //     name:'2'
-    //   },{
-    //     name:'3'
-    //   }]
-    // });
+    // alert("h")
+    new Nav(this,{
+      navItems:[{
+        name:'1'
+      },{
+        name:'2'
+      },{
+        name:'3'
+      }]
+    });
   }
 })
